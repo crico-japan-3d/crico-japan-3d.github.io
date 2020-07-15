@@ -12,11 +12,20 @@
 	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/theme-chipotle.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-	<link
-		href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
-		rel='stylesheet' type='text/css'>
-	<link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700" rel="stylesheet" type="text/css">
-	<link href="css/font-roboto.css" rel="stylesheet" type="text/css">
+	<style>
+		.resizeimage img {
+			width: 100%;
+		}
+
+		.circle img {
+			border-radius: 50%;
+			/* 角丸半径を50%にする(=円形にする) */
+			width: 180px;
+			/* ※縦横を同値に */
+			height: 180px;
+			/* ※縦横を同値に */
+		}
+	</style>
 </head>
 
 <body>
@@ -29,21 +38,21 @@
 		<nav>
 			<div class="nav-utility">
 				<div class="module left">
-					<i class="ti-location-arrow">&nbsp;</i>
-					<span class="sub">68 Cardamon Place, Melbourne Vic 3000</span>
+					<i class="ti-mobile">&nbsp;</i>
+					<span class="sub">TEL：03-6206-8965</span>
 				</div>
 				<div class="module left">
 					<i class="ti-email">&nbsp;</i>
-					<span class="sub">hello@foundry.net</span>
+					<span class="sub">info@crico-jp.com</span>
 				</div>
 				<div class="module right">
-					<a class="btn btn-sm" href="#">Login</a>
+					<a class="btn btn-lg btn-filled" href="#mail">無料相談する</a>
 				</div>
 			</div>
 			<div class="nav-bar">
 				<div class="module left">
 					<a href="index.html">
-						<img class="logo logo-light" alt="Foundry" src="img/logo-light.png">
+						<img class="logo logo-light" alt="Foundry" src="img/Crico_logo_2019_white.png">
 						<div class="vnu"><img class="logo logo-dark" alt="Foundry" src="img/crico_logo_main.png"></div>
 					</a>
 				</div>
@@ -104,22 +113,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<div class="module widget-handle language left">
-						<ul class="menu">
-							<li class="has-dropdown">
-								<a href="#">ENG</a>
-								<ul>
-									<li>
-										<a href="#">French</a>
-									</li>
-									<li>
-										<a href="#">Deutsch</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
 				</div>
 
 			</div>
@@ -161,18 +154,17 @@
 
 
 
+		<p class="resizeimage">
+			<a href="#mail"><img alt="image" src="img/3dcg_cybe_header_image.png"></a>
+		</p>
 
-		<section class="pt240 pb240 image-bg overlay bg-light">
-			<div class="background-image-holder">
-				<img alt="image" class="background-image" src="img/3dcg_header_fix.png">
-			</div>
 
 
 
 		</section>
 		<section class="bg-primary">
 			<div class="container">
-				<div class="row mb64 mb-xs-24">
+				<!-- 				<div class="row mb64 mb-xs-24">
 					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 						<h3 class="mb40 mb-xs-24">A landing page for the next generation.</h3>
 						<p class="lead">
@@ -180,7 +172,7 @@
 							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.
 						</p>
 					</div>
-				</div>
+				</div> -->
 
 				<div class="row mb48 mb-xs-24">
 					<div class="col-sm-offset-2 col-sm-8">
@@ -196,7 +188,7 @@
 							<div class="play-button dark"></div>
 						</div>
 						<div class="col-sm-12 text-center">
-							<a class="btn btn-lg" href="#">相談する</a>
+							<a class="btn btn-lg" href="#mail">無料相談する</a>
 						</div>
 					</div>
 				</div>
@@ -212,39 +204,20 @@
 			</div>
 			<div class="container">
 				<div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
-					<h2 class="large mb40 mb-xs-16">イメージが<br>固まっていなくても大丈夫！</h1>
-
-						<p class="lead mb40">◆いざ、３DCGを作ろうと思っても色んな悩みが出てくると思います。
-							<br>・デザインはどうする？
-							<br>・イラストはあるけど3Dにするとどうなる？
-							<br>・予算的にどの程度のクオリティが適切？
-							<br>
-							<br>◆検討段階からCricoにご相談ください！
-							<br>弊社には強力なイラスト部門もございます。
-							<br>ゲームを始め、様々なコンテンツ制作に関わってきた知見を活かし
-							<br>お客様のイメージを固める所からお手伝いさせて頂く事が可能です。&nbsp;</p>
-						<a class="btn-lg btn" href="#">Explore Foundry</a>
+					<h2 class="large mb40 mb-xs-16">イメージが<br>固まっていなくても<br>大丈夫！</h2>
+					<p class="lead mb40">
+						<b>いざ、3DCGを作ろうと思っても色んな悩みが出てくると思います。</b><br>
+						・デザインはどうする？<br>
+						・イラストはあるけど3Dにするとどうなる？<br>
+						・予算的にどの程度のクオリティが適切？<br>
+						<br>
+						<br>
+						<b>検討段階からCricoにご相談ください！</b>
+						<br>弊社には強力なイラスト部門もございます。
+						<br>ゲームを始め、様々なコンテンツ制作に関わってきた知見を活かしお客様のイメージを固める所からお手伝いさせて頂く事が可能です。</p>
+					<a class="btn-lg btn" href="#mail">無料相談する</a>
 				</div>
 			</div>
-
-		</section>
-		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1 text-center">
-						<h3 class="uppercase color-primary mb40 mb-xs-24">イメージが固まっていなくても大丈夫！&nbsp;<br></h3>
-						<p class="lead">◆いざ、３DCGを作ろうと思っても色んな悩みが出てくると思います。
-							<br>・デザインはどうする？
-							<br>・イラストはあるけど3Dにするとどうなる？
-							<br>・予算的にどの程度のクオリティが適切？&nbsp;<br><br><br><br>◆検討段階からCricoにご相談ください！
-							<br>弊社には強力なイラスト部門もございます。
-							<br>ゲームを始め、様々なコンテンツ制作に関わってきた知見を活かし
-							<br>お客様のイメージを固める所からお手伝いさせて頂く事が可能です。&nbsp;<br></p>
-					</div>
-				</div>
-
-			</div>
-
 		</section>
 		<section>
 			<div class="container">
@@ -252,8 +225,7 @@
 					<div class="col-sm-12 text-center">
 						<h4 class="uppercase mb16">料金プラン</h4>
 						<p class="lead mb64">
-							Perfect for plans with greater detail. Alter appearance with '.boxed' and '.emphasis'
-							classes
+							ご希望の予算にあわせてご制作いたします。
 						</p>
 					</div>
 				</div>
@@ -264,10 +236,8 @@
 							<h5 class="uppercase">ローコスト</h5>
 							<span class="price">35万円</span>
 							<p class="lead">人月単価</p>
-							<a class="btn btn-filled btn-lg" href="#">Get Started</a>
 							<ul>
-								<li>予算に合わせてクオリティや工数、デザイナーのレベルなどを調整しコストパフォーマンスを重視したプランになります
-									予算に合わせてクオリティや工数、デザイナーのレベルなどを調整しコストパフォーマンスを重視したプランになります。&nbsp;<br></li>
+								<li>予算に合わせてクオリティや工数、デザイナーのレベルなどを調整しコストパフォーマンスを重視したプランになります。<br></li>
 
 
 
@@ -280,9 +250,8 @@
 							<h5 class="uppercase">バランス</h5>
 							<span class="price">60万円&nbsp;</span>
 							<p class="lead">人月単価</p>
-							<a class="btn btn-filled btn-lg" href="#">Get Started</a>
 							<ul>
-								<li>実力のあるデザイナーやパートナー企業をアサインしたバランスの取れたプランになります実力のあるデザイナーやパートナー企業をアサインしたバランスの取れたプランになります。
+								<li>実力のあるデザイナーやパートナー企業をアサインしたバランスの取れたプランになります。
 								</li>
 
 
@@ -296,9 +265,8 @@
 							<h5 class="uppercase">ハイクオリティ</h5>
 							<span class="price">80万円</span>
 							<p class="lead">人月単価</p>
-							<a class="btn btn-white btn-lg" href="#">Get Started</a>
 							<ul>
-								<li>実績豊富なデザイナーやパートナー企業がクオリティを追及するプランになります 実績豊富なデザイナーやパートナー企業がクオリティを追及するプランになります。<br>
+								<li>実績豊富なデザイナーやパートナー企業がクオリティを追及するプランになります。<br>
 								</li>
 
 
@@ -306,6 +274,11 @@
 							</ul>
 						</div>
 
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<a class="btn btn-filled btn-lg" href="#mail">無料相談する</a>
 					</div>
 				</div>
 
@@ -328,29 +301,39 @@
 				<div class="row">
 
 
-
-					<div class="col-sm-6">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4">
 						<div class="feature feature-1 boxed">
 							<div class="text-center">
-								<i class="ti-package icon"></i>
-								<h5 class="uppercase">業務内容</h5>
+								<p class="circle">
+									<img src="img/sw_btn01_img.jpg" alt="業務内容img"></p>
+								<h3 class="uppercase">業務内容</h5>
 							</div>
 							<p>
 								イラスト、アニメーション、ドット絵、UI、シナリオ、企画開発と、あらゆる表現で制作します。</p>
+							<div class="text-center">
+								<a class="btn btn-lg btn-filled" href="https://crico-japan.com/service">詳細はこちら</a>
+							</div>
 						</div>
 
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<div class="feature feature-1 boxed">
 							<div class="text-center">
-								<i class="ti-heart icon"></i>
-								<h5 class="uppercase">制作実績</h5>
+								<p class="circle">
+									<img src="img/sw_btn02_img.jpg" alt="制作実績img"></p>
+								<h3 class="uppercase">制作実績</h5>
 							</div>
 							<p>
 								有名タイトルの高品質アセットから、テイストを合わせた版権物、様々なクリエイティブをおまかせ頂いております。</p>
+							<div class="text-center">
+								<a class="btn btn-lg btn-filled"
+									href="https://crico-japan.com/news/2020/06/info944.html">詳細はこちら</a>
+							</div>
 						</div>
 
 					</div>
+					<div class="col-sm-2"></div>
 				</div>
 
 			</div>
@@ -368,44 +351,34 @@
 					<div class="logo-carousel">
 						<ul class="slides">
 							<li>
-								<a href="#">
-									<img alt="Logo" src="img/DMM.com_logo_RGB.png">
-								</a>
+
+								<img alt="Logo" src="img/DMM.com_logo_RGB.png">
+
 							</li>
 							<li>
-								<a href="#">
-									<img alt="Logo" src="img/denalogo.png">
-								</a>
+
+								<img alt="Logo" src="img/denalogo.png">
+
 							</li>
 							<li>
-								<a href="#">
-									<img alt="Logo" src="img/CyberAgent_logo.png">
-								</a>
+
+								<img alt="Logo" src="img/CyberAgent_logo.png">
+
 							</li>
 							<li>
-								<a href="#">
-									<img alt="Logo" src="img/creatures_logo.jpg">
-								</a>
+
+								<img alt="Logo" src="img/creatures_logo.jpg">
+
 							</li>
 							<li>
-								<a href="#">
-									<img alt="Logo" src="img/l1.png">
-								</a>
+
+								<img alt="Logo" src="img/enish.png">
+
 							</li>
 							<li>
-								<a href="#">
-									<img alt="Logo" src="img/l2.png">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img alt="Logo" src="img/l3.png">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img alt="Logo" src="img/l4.png">
-								</a>
+
+								<img alt="Logo" src="img/ogp_square-enix.png">
+
 							</li>
 						</ul>
 					</div>
@@ -450,28 +423,14 @@
 		<section>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 col-md-5">
+					<div class="col-sm-12 text-center"><a name="mail"></a>
 						<h4 class="uppercase">お問い合わせ</h4>
 						<p>お見積りやご相談などございましたらお気軽にお問い合わせください。<br></p>
 						<hr>
-						<p>
-							438 Marine Parade
-							<br> Elwood, Victoria
-							<br> P.O Box 3184
-						</p>
-						<hr>
-						<p><br>
-						</p>
-					</div>
-					<div class="col-sm-6 col-md-5 col-md-offset-1">
-						<form class="form-email" data-success="Thanks for your submission, we will be in touch shortly."
-							data-error="Please fill all fields correctly.">
-							<input type="text" class="validate-required" name="name" placeholder="お名前">
-							<input type="text" class="validate-required validate-email" name="email"
-								placeholder="メールアドレス">
-							<textarea class="validate-required" name="message" rows="4" placeholder="メッセージ"></textarea>
-							<button type="submit">Send Message</button>
-						</form>
+						<iframe
+							src="https://docs.google.com/forms/d/e/1FAIpQLSfTQ54wJjS3ihEspfElY52km2IvOxgW6Z8LRbmdWzJGT-cV8Q/viewform?embedded=true"
+							width="800" height="1790" frameborder="0" marginheight="0"
+							marginwidth="0">読み込んでいます…</iframe>
 					</div>
 				</div>
 
@@ -482,7 +441,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<a href="#"><img class="image-xxs fade-half" alt="Pic" src="img/logo-light.png"></a>
+						<a href="#"><img class="image-xxs fade-half" alt="Pic" src="img/Crico_logo_2019_white.png"></a>
 					</div>
 
 					<div class="col-sm-4 text-center">
