@@ -10,6 +10,8 @@
 	<link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/theme-chipotle.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
 	<style>
@@ -26,6 +28,19 @@
 			/* ※縦横を同値に */
 		}
 	</style>
+	<script type="text/javascript">
+		// 通常のスムーススクロール
+		$(function () {
+			$('a[href^="#"].click(function(){
+	var speed = 500;
+			var href = $(this).attr("href");
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			var position = target.offset().top;
+			$("html, body").animate({ scrollTop: position }, speed, "swing");
+			return false;
+		});
+	});
+	</script>
 </head>
 
 <body>
@@ -180,10 +195,10 @@
 					</div>
 				</div>
 				<div class="row masonry masonryFlyIn">
-					<div class="col-md-3 col-sm-6 masonry-item project" data-filter="People">
+					<div class="col-md-3 col-sm-6 masonry-item project" data-filter="キャラデザ,モデリング,モーション">
 						<div class="image-tile inner-title hover-reveal text-center">
 							<a href="#">
-								<img alt="Pic" src="img/project-single-1.jpg" />
+								<img alt="Pic" src="img/hihumin.jpg" />
 								<div class="title">
 									<h5 class="uppercase mb0">Happy Couple</h5>
 									<span>People / Life</span>
@@ -324,17 +339,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 text-center">
-						<h2 class="mb16">Works</h2>
+						<h2 class="mb16">OtherWorks</h2>
 						<p class="lead mb64">
-							Cricoのサービス内容と制作実績はこちら</p>
+							Cricoのその他サービスと制作実績はこちら</p>
 					</div>
 				</div>
 
 				<div class="row">
 
 
-					<div class="col-sm-2"></div>
-					<div class="col-sm-4">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-5">
 						<div class="feature feature-1 boxed">
 							<div class="text-center">
 								<p class="circle">
@@ -349,7 +364,7 @@
 						</div>
 
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-5">
 						<div class="feature feature-1 boxed">
 							<div class="text-center">
 								<p class="circle">
@@ -365,7 +380,7 @@
 						</div>
 
 					</div>
-					<div class="col-sm-2"></div>
+					<div class="col-sm-1"></div>
 				</div>
 
 			</div>
@@ -495,10 +510,17 @@
 		</footer>
 	</div>
 
-
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flickr.js"></script>
 	<script src="js/flexslider.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/masonry.min.js"></script>
+	<script src="js/twitterfetcher.min.js"></script>
+	<script src="js/spectragram.min.js"></script>
+	<script src="js/ytplayer.min.js"></script>
+	<script src="js/countdown.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
 	<script src="js/parallax.js"></script>
 	<script src="js/scripts.js"></script>
 	    
