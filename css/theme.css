@@ -723,7 +723,12 @@ footer.bg-dark li,
 }
 /*!---------- 6. BUTTONS ----------*/
 .btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
   border: 2px solid #47b475;
   padding: 0 26px;
   height: 40px;
@@ -760,7 +765,7 @@ footer.bg-dark li,
 }
 .btn-lg {
   height: 50px;
-  line-height: 46px;
+  line-height: 49px;
   min-width: 200px;
 }
 .btn-icon.btn-lg {
